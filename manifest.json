@@ -11,7 +11,8 @@
 		{
 			"matches": ["https://papertrailapp.com/*"],
 			"run_at": "document_start",
-			"js": ["clickable.js"]
+			"js": ["clickable.js"],
+      			"css": ["style.css"]
 		}
 	],
 	"permissions": [
