@@ -4,7 +4,7 @@ var replaceTextWithLinks = function (element) {
 	}
 
 	var text = element.textContent;
-	var textWithLinks = text.replace(/https?:\/\/\S+/g, '<a target="_blank" href="$0">$0</a>');
+	var textWithLinks = text.replace(/(https?:\/\/\S+)/g, '<a target="_blank" href="$1">$1</a>');
 	element.innerHTML = textWithLinks;
 	element.classList.add('linkified');
 };
